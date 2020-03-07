@@ -14,5 +14,5 @@ add_action('after_rocket_clean_post', function( $post ) {
 
 
 add_action( 'after_rocket_clean_domain', function() {
-    if(class_exists('RunCache_Purger')) RunCache_Purger::flush_home(true);
+	if(class_exists('RunCache_Purger')) RunCache_Purger::flush_home(true);
 });
